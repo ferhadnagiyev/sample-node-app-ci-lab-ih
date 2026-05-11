@@ -49,7 +49,7 @@ jobs:
           acrUsername: ${{ secrets.DOCKERHUB_USERNAME }}
           acrPassword: ${{ secrets.DOCKERHUB_TOKEN }}
           containerAppName: frontendapp
-          containerAppEnvironment: aca-env-sakit
-          resourceGroup: container-labs-rg-sakit
+          containerAppEnvironment: aca-env-ferhad
+          resourceGroup: container-labs-rg-ferhad
           imageToBuild: docker.io/${{ secrets.DOCKERHUB_USERNAME }}/sample-node-app:${{ github.sha }}
           imageToDeploy: docker.io/${{ secrets.DOCKERHUB_USERNAME }}/sample-node-app:${{ github.sha }}
