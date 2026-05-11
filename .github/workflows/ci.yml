@@ -48,7 +48,7 @@ jobs:
           acrName: docker.io
           acrUsername: ${{ secrets.DOCKERHUB_USERNAME }}
           acrPassword: ${{ secrets.DOCKERHUB_TOKEN }}
-          containerAppName: frontendapp
+          containerAppName: frontendapp-ferhad
           containerAppEnvironment: aca-env-ferhad
           resourceGroup: container-labs-rg-ferhad
           imageToBuild: docker.io/${{ secrets.DOCKERHUB_USERNAME }}/sample-node-app:${{ github.sha }}
