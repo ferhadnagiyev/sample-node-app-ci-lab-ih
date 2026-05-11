@@ -12,10 +12,10 @@ permissions:
  #id-token: write
 
 env:
- APP_PORT: 3000
- IMAGE_NAME: ${{ secrets.DOCKERHUB_USERNAME }}/frontendapp-node
- AZURE_RESOURCE_GROUP: web-labs-rg-ferhad
- AZURE_WEBAPP_NAME: frontendapp-web-ferhad
+  APP_PORT: 3000
+  IMAGE_NAME: ${{ secrets.DOCKERHUB_USERNAME }}/frontendapp-node
+  AZURE_RESOURCE_GROUP: ci-cd-lab-rg-ferhad
+  AZURE_WEBAPP_NAME: frontendapp-web-ferhad
 
 jobs:
  build-test-and-deploy:
